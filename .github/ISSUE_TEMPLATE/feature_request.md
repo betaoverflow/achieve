@@ -18,3 +18,6 @@ A clear and concise description of any alternative solutions or features you've 
 
 **Additional context**
 Add any other context or screenshots about the feature request here.
+
+
+Please do star the repo to increase visibility and help us reach a bigger audience because this project is ours as much as yours😁⭐️
