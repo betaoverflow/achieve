@@ -36,3 +36,5 @@ If applicable, add screenshots to help explain your problem.
 
 **Additional context**
 Add any other context about the problem here.
+
+Please do star the repo to increase visibility and help us reach a bigger audience because this project is ours as much as yours😁⭐️
