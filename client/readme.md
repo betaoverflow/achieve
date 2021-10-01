@@ -34,7 +34,7 @@ Install all the npm packages. Go into the project folder and type the following 
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd youandesign/
+    cd achieve/
     gatsby develop
     ```
 
