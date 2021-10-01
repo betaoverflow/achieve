@@ -94,7 +94,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/).
 
-### Please abide by  [Contributing Guidelines](https://github.com/youandesign/youandesign/blob/main/CONTRIBUTING.md) and [Code of Conduct](https://github.com/youandesign/youandesign/blob/main/CODE_OF_CONDUCT.md) 🚀
+### Please abide by  [Contributing Guidelines](https://github.com/betaoverflow/achieve/blob/main/CONTRIBUTING.md) and [Code of Conduct](https://github.com/betaoverflow/achieve/blob/main/CODE_OF_CONDUCT.md) 🚀
 
 
 
