@@ -1,4 +1,5 @@
 // ignore: import_of_legacy_library_into_null_safe
+import 'package:achieve/screens/homeScreen.dart';
 import 'package:bubble_bottom_bar/bubble_bottom_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -20,9 +21,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: <Widget>[
-        Container(
-          color: Colors.green.shade100,
-        ),
+        HomeScreen(),
         Container(
           color: Colors.orange.shade100,
         ),
