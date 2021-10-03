@@ -1,6 +1,7 @@
 const express = require('express')
 var router = express.Router()
 var ObjectId = require('mongoose').Types.ObjectId
+const auth = require('../auth/login')
 
 var { job } = require('../models/job')
 
@@ -31,6 +32,10 @@ router.post('/job', (req, res) => {
         if (!err) res.send(response)
         else console.log('Error while creating new job: ' + JSON.stringify(err, undefined, 2))
     })
+})
+
+router.post('/login', (req, res) => {
+    auth.login(req, res)
 })
 
 // update job
