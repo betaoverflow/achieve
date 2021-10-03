@@ -1,8 +1,8 @@
 exports.login = (req, res, next) => {
     const jwt = require('jsonwebtoken');
     const dotenv = require('dotenv');
-    const email = req.body.email;
-    const password = req.body.password;
+    const email = req.body.Email;
+    const password = req.body.Password;
     
 
     if (!email || !password) {
