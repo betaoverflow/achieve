@@ -68,6 +68,7 @@ Create a `.env` at the root of the `backend` folder and add these
 ```
 PORT = 
 DB_CONNECTION = 
+SECRET_TOKEN =
 ```
 
 ## Running app frontend

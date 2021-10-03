@@ -4,8 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "dev":"nodemon lib/server.js",
-    "start":"node lib/server.js"
+    "dev": "nodemon lib/server.js",
+    "start": "node lib/server.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,7 @@
   "dependencies": {
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.8",
     "nodemon": "^2.0.13"
   }
