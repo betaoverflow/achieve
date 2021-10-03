@@ -2,7 +2,75 @@
 
 ![hacktoberfest 2021 banner](https://user-images.githubusercontent.com/76111005/135587745-7bcfee18-3fd0-47e5-be37-1def03593f9e.png)
 
-# Quick Start 🚀
+# Prerequisites 👨‍💻
+
+### Install Node JS
+Refer to https://nodejs.org/en/ to install nodejs
+
+## Cloning and Running the Application in local 💻
+
+Clone the project in localhost
+```bash
+git clone https://github.com/betaoverflow/achieve.git
+```
+Install all the npm packages. Go into the `client` folder and type the following command to install all npm packages
+
+```bash
+npm install
+```
+
+In order to run the application Type the following command. Refer [here](https://github.com/betaoverflow/achieve/blob/main/client/readme.md)
+
+The Application Runs on **localhost:8000**
+
+### To spin up the backend server
+
+Navigate to the `backend` project folder in a seperate terminal. Then install all npm packages
+```bash
+npm install 
+```
+
+If you don't have nodemon globally installed on your system, install it so the server can autorefresh 
+```bash
+npm install -g nodemon
+```
+
+Now it's time to spin up the backend server. Run the lines
+```bash
+npm run dev
+```
+If you get an error immediately, don't worry. The final step is to connect to the MongoDB database.
+
+Note: The Server Runs on **localhost:8080**
+
+## Connecting to the Database
+Spin up your cluster in MongoDB and replace your connection with URI in `config/keys.js`
+If you face any problems, refer to the [MongoDB](https://www.mongodb.com/blog/postquick-start-nodejs-mongodb--how-to-get-connected-to-your-database) website.
+
+
+## Connecting to the Database if you haven't used MongoDB Atlas before
+Install the MongoDB Node.js Driver with the following command:
+```bash
+npm install mongodb
+```
+
+Set up a [MongoDB Atlas Database](https://www.youtube.com/watch?v=rPqRyYJmx2g) by following this short MongoDB setup video till the *3:20* mark. Stop after that mark!
+
+On your Cluster home page, select CONNECT > Connect your application. 
+1. Select Node.js in the drop down for your driver, and select the latest version. 
+1. Then, copy the connecting string (URI).
+1. Paste this string as the value of mongoURI inside `config/keys.js` of this project.
+
+Replace the `<password>` section of the string with your Database Access password. Viola, your server should now successfuly connect to MongoDB!
+
+Create a `.env` at the root of the `backend` folder and add these
+
+```
+PORT = 
+DB_CONNECTION = 
+```
+
+## Running app frontend
 
 This project is a starting point for a Flutter application.
 
@@ -15,24 +83,6 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-
-# Cloning and Running the Application in local 💻
-
-**Step 1:**
-
-Download or clone this repo by using the link below:
-
-```
-https://github.com/betaoverflow/achieve.git
-```
-
-**Step 2:**
-
-Go to project root and execute the following command in console to get the required dependencies: 
-
-```
-flutter pub get 
-```
 
 `All contributions are welcome 🎉🎉`
 
