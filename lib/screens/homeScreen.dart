@@ -41,49 +41,51 @@ class _HomeScreenState extends State<HomeScreen>
 
   @override
   Widget build(BuildContext context) {
-    return NestedScrollView(
-        controller: _scrollController,
-        headerSliverBuilder: (context, value) {
-          return [
-            SliverToBoxAdapter(
-              child: Padding(
-                padding: EdgeInsets.fromLTRB(25, 10, 25, 25),
+    return SafeArea(
+      child: NestedScrollView(
+          controller: _scrollController,
+          headerSliverBuilder: (context, value) {
+            return [
+              SliverToBoxAdapter(
+                child: Padding(
+                  padding: EdgeInsets.fromLTRB(25, 10, 25, 25),
+                ),
               ),
-            ),
-            SliverToBoxAdapter(
-              child: Container(
-                padding: EdgeInsets.only(left: 15),
-                alignment: Alignment.centerLeft,
-                child: TabBar(
-                    labelPadding: EdgeInsets.only(right: 15),
-                    indicatorSize: TabBarIndicatorSize.label,
-                    controller: _tabController,
-                    isScrollable: true,
-                    indicator: UnderlineTabIndicator(),
-                    labelColor: Colors.black,
-                    labelStyle:
-                        TextStyle(fontSize: 19, fontWeight: FontWeight.bold),
-                    unselectedLabelColor: Colors.black45,
-                    unselectedLabelStyle:
-                        TextStyle(fontSize: 18, fontWeight: FontWeight.normal),
-                    tabs: List.generate(categories.length,
-                        (index) => Text(categories[index].name))),
+              SliverToBoxAdapter(
+                child: Container(
+                  padding: EdgeInsets.only(left: 15),
+                  alignment: Alignment.centerLeft,
+                  child: TabBar(
+                      labelPadding: EdgeInsets.only(right: 15),
+                      indicatorSize: TabBarIndicatorSize.label,
+                      controller: _tabController,
+                      isScrollable: true,
+                      indicator: UnderlineTabIndicator(),
+                      labelColor: Colors.black,
+                      labelStyle:
+                          TextStyle(fontSize: 19, fontWeight: FontWeight.bold),
+                      unselectedLabelColor: Colors.black45,
+                      unselectedLabelStyle: TextStyle(
+                          fontSize: 18, fontWeight: FontWeight.normal),
+                      tabs: List.generate(categories.length,
+                          (index) => Text(categories[index].name))),
+                ),
               ),
-            ),
-          ];
-        },
-        body: Container(
-          child: TabBarView(
-              controller: _tabController,
-              children: List.generate(categories.length, (index) {
-                return ListView.builder(
-                  itemCount: 4,
-                  itemBuilder: (context, index) {
-                    return JobCard();
-                  },
-                  padding: EdgeInsets.symmetric(horizontal: 25),
-                );
-              })),
-        ));
+            ];
+          },
+          body: Container(
+            child: TabBarView(
+                controller: _tabController,
+                children: List.generate(categories.length, (index) {
+                  return ListView.builder(
+                    itemCount: 4,
+                    itemBuilder: (context, index) {
+                      return JobCard();
+                    },
+                    padding: EdgeInsets.symmetric(horizontal: 25),
+                  );
+                })),
+          )),
+    );
   }
 }
