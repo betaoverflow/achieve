@@ -2,7 +2,7 @@
     package="com.example.achieve">
    <application
         android:label="achieve"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/achieve">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
